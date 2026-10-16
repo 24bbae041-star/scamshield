@@ -1,0 +1,71 @@
+{
+  "entities": {
+    "ScanItem": {
+      "title": "ScanItem",
+      "description": "User scam scan record saved in Firestore",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "userId": { "type": "string" },
+        "type": { "type": "string" },
+        "title": { "type": "string" },
+        "snippet": { "type": "string" },
+        "riskLevel": { "type": "string" },
+        "evidenceListJson": { "type": "string" },
+        "explanation": { "type": "string" },
+        "nextSteps": { "type": "string" },
+        "independentVerification": { "type": "string" },
+        "createdAt": { "type": "string", "format": "date-time" },
+        "updatedAt": { "type": "string", "format": "date-time" }
+      },
+      "required": ["userId", "title", "riskLevel"]
+    },
+    "TrustedContactItem": {
+      "title": "TrustedContactItem",
+      "description": "User trusted emergency family contact",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "userId": { "type": "string" },
+        "name": { "type": "string" },
+        "relationship": { "type": "string" },
+        "phoneNumber": { "type": "string" },
+        "isPrimary": { "type": "boolean" },
+        "avatarEmoji": { "type": "string" },
+        "notes": { "type": "string" },
+        "createdAt": { "type": "string", "format": "date-time" },
+        "updatedAt": { "type": "string", "format": "date-time" }
+      },
+      "required": ["userId", "name", "phoneNumber"]
+    },
+    "QuizProgressItem": {
+      "title": "QuizProgressItem",
+      "description": "User quiz completion record",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "userId": { "type": "string" },
+        "quizId": { "type": "string" },
+        "selectedOptionIndex": { "type": "number" },
+        "isCorrect": { "type": "boolean" },
+        "badgeEarned": { "type": "string" },
+        "completedAt": { "type": "string", "format": "date-time" }
+      },
+      "required": ["userId", "quizId"]
+    }
+  },
+  "firestore": {
+    "/users/{userId}/scans/{scanId}": {
+      "schema": "ScanItem",
+      "description": "Scam scan records saved by the user"
+    },
+    "/users/{userId}/trustedContacts/{contactId}": {
+      "schema": "TrustedContactItem",
+      "description": "Trusted family emergency contacts"
+    },
+    "/users/{userId}/quizProgress/{progressId}": {
+      "schema": "QuizProgressItem",
+      "description": "Completed scenario quiz answers and earned badges"
+    }
+  }
+}

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- Cute Purple Shield Body -->
+    <path
+        android:fillColor="#5B45A6"
+        android:strokeColor="#BCEBD7"
+        android:strokeWidth="3.5"
+        android:strokeLineCap="round"
+        android:pathData="M35,32 Q54,26 73,32 Q77,58 54,82 Q31,58 35,32 Z" />
+
+    <!-- Mint Top Emblem -->
+    <path
+        android:fillColor="#BCEBD7"
+        android:pathData="M48,36 L60,36 L54,42 Z" />
+
+    <!-- Cute Eyes -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M46,49 A3,3 0 1,0 46,55 A3,3 0 1,0 46,49 Z" />
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M62,49 A3,3 0 1,0 62,55 A3,3 0 1,0 62,49 Z" />
+
+    <!-- Cute Eye Pupils -->
+    <path
+        android:fillColor="#1F1836"
+        android:pathData="M46.5,50 A1.8,1.8 0 1,0 46.5,53.6 A1.8,1.8 0 1,0 46.5,50 Z" />
+    <path
+        android:fillColor="#1F1836"
+        android:pathData="M62.5,50 A1.8,1.8 0 1,0 62.5,53.6 A1.8,1.8 0 1,0 62.5,50 Z" />
+
+    <!-- Rosy Cheeks -->
+    <path
+        android:fillColor="#FFC6B0"
+        android:pathData="M40,55 A2.5,2.5 0 1,0 40,60 A2.5,2.5 0 1,0 40,55 Z" />
+    <path
+        android:fillColor="#FFC6B0"
+        android:pathData="M68,55 A2.5,2.5 0 1,0 68,60 A2.5,2.5 0 1,0 68,55 Z" />
+
+    <!-- Cute Smile -->
+    <path
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="2"
+        android:strokeLineCap="round"
+        android:pathData="M50,58 Q54,63 58,58" />
+
+    <!-- Yellow Sparkle Star Top Right -->
+    <path
+        android:fillColor="#FFE69A"
+        android:pathData="M78,28 Q81,31 84,31 Q81,31 81,34 Q81,31 78,31 Q81,31 78,28 Z" />
+
+    <!-- Mint Sparkle Star Bottom Left -->
+    <path
+        android:fillColor="#BCEBD7"
+        android:pathData="M27,66 Q29,68 31,68 Q29,68 29,70 Q29,68 27,68 Q29,68 27,66 Z" />
+</vector>
